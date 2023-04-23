@@ -27,18 +27,19 @@
       <p> Welcome to Crime DB, where you can access relevant information pertaining to your case or officer. </p>
       <img class ="img-fluid" id="banner"  src=https://crimedatabasewebsite.kayaerol.repl.co/static/fingerprint.jpg> 
       <h2>Sign In</h2>
-        <form class="form-inline">
-          <div class="form-group mx-sm-3 ">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1"             aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-light" >We'll never                 share your email with anyone else.</small>
-          </div>
-          <div class="form-group mx-sm-3 mb-2">
-            <label for="inputPassword2" class="sr-only">Password</label>
-            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-          </div>
-          <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-        </form>
+      <form action="authenticate.php" class="form-inline" method="post">
+        <div class="form-group mx-sm-3 ">
+          <label>Email address</label>
+          <input type="email" class="form-control" id="InputEmail" name="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label class="sr-only">Password</label>
+          <input type="password" class="form-control" id="passwordIn" name="passwordIn" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary mx-sm-3 mb-2">Login</button>
+      </form>  
+      <a href="{{ url_for('reg') }}" class="btn btn-primary mx-sm-3 mb-2">Register</a>
+      
       
       <h2>About US</h2>
       <p>We are a small team of programmers designing a website that keeps track of crime data in order to test our skills.</p>
