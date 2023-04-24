@@ -1,6 +1,8 @@
 { pkgs }: {
   deps = [
     pkgs.sudo
+    pkgs.brew install php
+    pkgs.sudo
     pkgs.python310Full
     pkgs.replitPackages.prybar-python310
     pkgs.replitPackages.stderred

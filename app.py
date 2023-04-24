@@ -13,14 +13,6 @@ def home():
 def reg():
   return render_template('register.html')
 
-@app.route('/TEST', methods=['POST'])
-def test():
-    email = request.form['createEmail']
-    password = request.form['createPass']
-    php_script = "templates/register.php"
-    php_output = subprocess.check_output(["php", php_script, email, password])
-    return render_template('TEST.html', email=email, password=password, php_output=php_output)
-
 
 @app.route("/register1")
 def p():
