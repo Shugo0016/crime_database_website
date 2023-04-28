@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Crime Selected</title>
+    <title>Ciminal Selected</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -63,7 +63,8 @@
       }
       .right-side {
         width: 50%;
-        padding-left: 20px;
+        padding-left: 60px;
+        padding-top: 430px;
       }
       .right-side h3 {
         margin-top: 0;
@@ -74,76 +75,79 @@
     <h1>Crime Tracker</h1>
     <div id ="container">
       <div class="left-side">
-        <h2>Crime ID: (00001)</h2>
-        <h5>Classification:</h5> 
-        <h5> <span class="Subtext">F (Felony) </span></h5> 
-        <h5>Date Charged: </h5>
-        <h5> <span class="Subtext">06/25/2001 </span></h5> 
-        <h5>Status: </h5>
-        <h5> <span class="Subtext">CA (Can Appeal) </span></h5> 
-        <h5>Hearing Date: </h5>
-        <h5> <span class="Subtext">05/30/2001 </span></h5> 
-        <h5>Appeal Cutoff Date: </h5>
-        <h5> <span class="Subtext">05/30/2001 </span></h5>
-        </h5>Charge List: </h5>
+        <h2>Criminal ID: (0016)</h2>
+        <h5>Name:</h5> 
+        <h5> <span class="Subtext">Kaya Erol </span></h5> 
+        <h5>Aliases: </h5>
+        <h5> <span class="Subtext">Big K, Kyle East </span></h5> 
+        <h5>Address: </h5>
+        <h5> <span class="Subtext">836 Dekalb Avenue, Brooklyn, New York 11221 </span></h5> 
+        <h5>Phone: </h5>
+        <h5> <span class="Subtext">1(415)-555-0825 </span></h5> 
+        <h5>Violation Status: </h5>
+        <h5> <span class="Subtext">No </span></h5>
+        <h5>Probation Status: </h5>
+        <h5> <span class="Subtext">Yes </span></h5>
+        <h5>Sentence List:</h5>
         <table>
             <tr>
-          <th>Crime code</th>
-          <th>Status</th>
-          <th>Fine amount</th>
-          <th>Court fee</th>
-          <th>Amount paid</th>
-          <th>Pay due date</th>
+          <th>Type</th>
+          <th>Probation Officer</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Violations</th>
         </tr>
         <tr>
-          <td>1234</td>
-          <td>Open</td>
-          <td>$500</td>
-          <td>$50</td>
-          <td>$0</td>
-          <td>2023-05-01</td>
+          <td>P (Probation)</td>
+          <td>John Cena</td>
+          <td>01/01/2001</td>
+          <td>07/01/2001</td>
+          <td>0</td>
         </tr>
         <tr>
-          <td>5678</td>
-          <td>Closed</td>
-          <td>$1000</td>
-          <td>$100</td>
-          <td>$1000</td>
-          <td>2023-04-30</td>
+          <td>H (House Arrest)</td>
+          <td>Dwayne Johnson</td>
+          <td>03/01/2001</td>
+          <td>09/01/2001</td>
+          <td>2</td>
         </tr>
         <tr>
-          <td>91011</td>
-          <td>Open</td>
-          <td>$750</td>
-          <td>$75</td>
-          <td>$0</td>
-          <td>2023-05-15</td>
-        </tr>
-        <tr>
-          <td>121314</td>
-          <td>Closed</td>
-          <td>$1500</td>
-          <td>$150</td>
-          <td>$1500</td>
-          <td>2023-05-01</td>
-        </tr>
-        <tr>
-          <td>151617</td>
-          <td>Open</td>
-          <td>$2000</td>
-          <td>$200</td>
-          <td>$0</td>
-          <td>2023-06-01</td>
+          <td>J (Jail Period)</td>
+          <td>Louis XVI</td>
+          <td>02/01/2001</td>
+          <td>02/01/2002</td>
+          <td>100</td>
         </tr>
         </table>
       </div>
       <div class="right-side">
-        <h3>Suspects Involved</h3>
-        <h6>Kaya Erol</h6>
-        <h6>Max Viduszynski</h6>
-        <h6>Anson Zhu</h6>
-        <h3>Officers Involved</h3>
-        <h6>Salim Arfaoui</h6>
+        <h5>Appeal List:</h5>
+        <table>
+            <tr>
+          <th>Crime ID</th>
+          <th>Filing Date</th>
+          <th>Hearing Date</th>
+          <th>Appeal Status</th>
+        </tr>
+        <tr>
+          <td>0016</td>
+          <td>05/24/2001</td>
+          <td>06/25/2001</td>
+          <td>P (Pending)</td>
+        </tr>
+        <tr>
+          <td>0016</td>
+          <td>02/30/2001</td>
+          <td>01/01/2002</td>
+          <td>A (Approved)</td>
+        </tr>
+        <tr>
+          <td>0016</td>
+          <td>02/30/2002</td>
+          <td>06/25/2002</td>
+          <td>D (Denied)</td>
+        </tr>
+        </table>
       </div>
     </div>
   </body>
